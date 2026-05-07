@@ -29,8 +29,16 @@
 -->
 	<h2>Work Experience</h2>
 <p style="margin: 0.5em;">
+<b>Performance Prediction of Triton Kernels (@Meta)</b>.
+	Autotuning <a href="https://triton-lang.org/main/index.html">Triton kernels</a> for performance is typically a very expensive process: searching through combinatorially large config spaces is bottlenecked by slow compilation and resource-heavy GPU execution of each search point. In my most recent work, I am building an approach to dramatically reducting this cost via a combination of static analysis and machine learning.
+</p>
+<p style="margin: 0.5em;">
+<b>Tensor Shapes in Pyrefly (@Meta)</b>.
+	I introduced <a href="https://pyrefly.org/en/docs/tensor-shapes/">Tensor Shapes</a> in Pyrefly, a fast type checker and language server for Python.	Traditionally, one of the most challenging aspects of model development has been tracking shapes of tensors throughout the model as they are transformed; they now show up as inlay typehints in your IDE, boosting productivity for both humans and AI agents. 
+	</p>
+<p style="margin: 0.5em;">
 <b>PyTorch Ahead-of-Time Compiler (@Meta)</b>.
-	I am currently leading the development of <a href="https://pytorch.org/docs/stable/export.html">PyTorch Export</a>, a core mechanism that enables sound whole-graph capture of PyTorch models, building on the technological breakthroughs of the <a href="https://pytorch.org/get-started/pytorch-2.0/">new PyTorch Compiler stack</a>. PyTorch Export, in combination with <a href="https://pytorch.org/executorch/stable/intro-overview.html">Executorch</a>, powers AI Inference in some of our Meta Reality Labs devices (including automatic speech recognition shipped in Ray Ban | Meta smart glasses and, coming soon, hand tracking in Quest 3 VR headsets). Through <a href="https://static.sched.com/hosted_files/pytorch2023/74/AOTInductor_%20ahead-of-time%20compilation%20for%20PT2%20exported%20models.pdf">AOTInductor</a>, it is also driving some of our next-generation serving use cases. PyTorch Export goes beyond the traditional "eager" mode of PyTorch by unlocking the ability to execute in Python-free environments and the freedom to do special-purpose optimizations for customized hardware. 
+	I led the development of <a href="https://pytorch.org/docs/stable/export.html">PyTorch Export</a>, a core mechanism that enables sound whole-graph capture of PyTorch models, building on the technological breakthroughs of the <a href="https://pytorch.org/get-started/pytorch-2.0/">new PyTorch Compiler stack</a>. PyTorch Export, in combination with <a href="https://pytorch.org/executorch/stable/intro-overview.html">Executorch</a>, powers AI Inference in some of our Meta Reality Labs devices (including automatic speech recognition shipped in Ray Ban | Meta smart glasses and, coming soon, hand tracking in Quest 3 VR headsets). Through <a href="https://static.sched.com/hosted_files/pytorch2023/74/AOTInductor_%20ahead-of-time%20compilation%20for%20PT2%20exported%20models.pdf">AOTInductor</a>, it is also driving some of our next-generation serving use cases. PyTorch Export goes beyond the traditional "eager" mode of PyTorch by unlocking the ability to execute in Python-free environments and the freedom to do special-purpose optimizations for customized hardware. 
 	</p>
 <p style="margin: 0.5em;">
 <b>AI for Compilers (@Meta)</b>.
@@ -38,13 +46,12 @@
 	</p>
 <p style="margin: 0.5em;">
 <b>AI Infrastructure (@Meta)</b>.
-	Until recently I was leading an ambitious company-wide initiative to build a platform and ecosystem for end-to-end machine learning development at Meta, applying programming-language principles and techniques to solve fundamental productivity and governance problems. This included an expressive language for describing pipelines of data transformations with static verification, parallelization, memoization, and dependency tracking (think <a href="https://dagster.io/blog/introducing-dagster">Dagster</a> + <a href="https://pytorch.org/torcharrow/beta/index.html">TorchArrow</a>); over which standard interfaces and a marketplace of privacy-aware components were built for data analysis, feature engineering, model training, and evaluation; which in turn fed into tools that vastly improved experimentation and automation.  
-
+	I led an ambitious company-wide initiative to build a platform and ecosystem for end-to-end machine learning development at Meta, applying programming-language principles and techniques to solve fundamental productivity and governance problems. This included an expressive language for describing pipelines of data transformations with static verification, parallelization, memoization, and dependency tracking (think <a href="https://dagster.io/blog/introducing-dagster">Dagster</a> + <a href="https://pytorch.org/torcharrow/beta/index.html">TorchArrow</a>); over which standard interfaces and a marketplace of privacy-aware components were built for data analysis, feature engineering, model training, and evaluation; which in turn fed into tools that vastly improved experimentation and automation.
 	</p>
 <p style="margin: 0.5em;">
 <b>JavaScript Typechecker (@Meta)</b>.
-	I also created <a href="https://flowtype.org">Flow</a>, a popular open-source type checker for JavaScript that is used by thousands of developers on millions of lines of code every day at Meta. Flow pioneered several advanced type inference idioms that were later adopted by other type systems for JavaScript, PHP, and Python, and is characterized by its focus on soundness and scalability.</p>
-
+	I also created <a href="https://flowtype.org">Flow</a>, a popular open-source type checker for JavaScript that is used by thousands of developers on millions of lines of code every day at Meta. Flow pioneered several advanced type inference idioms that were later adopted by other type systems for JavaScript, PHP, and Python, and is characterized by its focus on soundness and scalability.
+	</p>
 <p style="margin: 0.5em;">
 <b>ActionScript Language and Runtime (@Adobe)</b>.
 	Before joining Meta, I was heavily involved in building the future of the ActionScript language and the Flash platform at Adobe, and for a while, served on the JavaScript standardization committee.
